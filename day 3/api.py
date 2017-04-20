@@ -12,7 +12,7 @@ def get_data(get_url, post_id):
     except ValueError as e:
         print("You need to enter a whole number for your request to succeed")
         raise(e)
-    return "* Nothing to show *"
+    return "*empty*"
 
 
 def post_data(post_url, title, body, userId=11):

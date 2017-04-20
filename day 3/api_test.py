@@ -2,7 +2,7 @@
 
 
 import unittest, requests
-from work import get_data, post_data
+from api import get_data, post_data
 
 class TestsHttpAndWeb(unittest.TestCase):
 	url = "https://jsonplaceholder.typicode.com/posts/"
@@ -11,10 +11,10 @@ class TestsHttpAndWeb(unittest.TestCase):
 
 	def test_get_returns_nothing_to_show_out_of_range(self):
 		"""
-		should return '* empty *' if
+		should return '*empty*' if
 		input is not within 1 and 100
 		"""
-		self.assertEqual("* empty *",
+		self.assertEqual("*empty*",
 			get_data(self.url, "101"))
 
 	def test_get_raises_value_error_for_non_int(self):
