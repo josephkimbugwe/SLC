@@ -7,4 +7,4 @@ def is_prime(number):
     return len(factors) == 2
 
 
-print(prime_number(1000))
+print(prime_number(10))
